@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "/logo.png";
+import logo from "/Logo.png";
 import { FaBars } from "react-icons/fa";
 import Sidebar from "./Sidebar";
 
@@ -24,13 +24,13 @@ const Navbar = () => {
   }, [sidebar]);
 
   return (
-    <div className="bg-black p-2 md:p-4 text-white h-[60px] md:h-[125px] md:w-full shadow-lg z-20">
+    <div className="bg-black p-2 md:p-1 text-white h-[60px] md:h-[100px] md:w-full shadow-lg z-20">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center gap-2 md:gap-4">
           <img
             src={logo}
             alt="Logo"
-            className="h-[30px] w-[41px] md:h-[60px] md:w-[82px] m-1 md:m-3"
+            className=" size-10 sm:size-20 m-1 "
           />
           <div>
             <h2 className="text-sm md:text-xl font-bold">RUDRA CONSTRUCTION</h2>

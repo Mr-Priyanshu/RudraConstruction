@@ -20,7 +20,9 @@ import OurTeam from "../components/OurTeam";
 const Home = () => {
   return (
     <>
-      <Navbar />
+      <div className=" z-10 w-full fixed">
+        <Navbar />
+      </div>
       <Sidebar />
       <Body1 />
       <ImageStack />

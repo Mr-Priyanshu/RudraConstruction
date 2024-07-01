@@ -35,6 +35,7 @@ import AboutUs from "./components/About";
 import WorkQuality from "./pages/WorkQuality";
 import LiveOngoingProjects from "./pages/LiveOngoingProjects";
 import SingleProject from "./pages/SingleProject";
+import TextAnimation from "./components/animation";
 
 function App() {
   return (
@@ -74,10 +75,14 @@ function App() {
             <Route path="/IntHero" element={<IntHero />} />
             <Route path="/Terms" element={<Terms />} />
             <Route path="/Privacy" element={<Privacy />} />
-            <Route path="/AboutUs" element={<AboutUs/>} />
-            <Route path="/workquality" element={<WorkQuality/>}/>
-            <Route path="/liveProject" element={<LiveOngoingProjects/>}/>
-            <Route path="/singleproject/:id" element={<SingleProject/>}/>
+            <Route path="/AboutUs" element={<AboutUs />} />
+            <Route path="/workquality" element={<WorkQuality />} />
+            <Route path="/liveProject" element={<LiveOngoingProjects />} />
+            <Route path="/singleproject/:id" element={<SingleProject />} />
+
+
+
+            <Route path="/TextAnimation" element={<TextAnimation />} />
           </Route>
         </Routes>
       </BrowserRouter>
