@@ -1,12 +1,48 @@
-import React from "react";
+import { useState } from "react";
 import { MdEmail } from "react-icons/md";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaSquareThreads } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { FaAddressCard } from "react-icons/fa6";
 import { IoCallSharp } from "react-icons/io5";
+import axios from "axios";
 
 function Contact() {
+
+  const [contactData, setContactData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setContactData({
+      ...contactData, [name]: value
+    });
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); 
+    try {
+      const res = await axios.post("http://localhost:8080/api/rudra-constrctions/contactInfo", { ...contactData });
+
+      console.log('line 35', res.data);
+      alert("Contact Request Send")
+    } catch (error) {
+      console.log(error);
+    }
+    setContactData(
+      {
+        name: "",
+    email: "",
+    subject: "",
+    message: "",
+      }
+    );
+  }
+
   return (
     <>
       <div className="bg-[#f3f6ff] flex justify-center items-center min-h-screen w-full mb-20">
@@ -40,19 +76,23 @@ function Contact() {
               <div className="my-6">
                 <div className="grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-4xl bg-white  rounded-md text-[#333] font-[sans-serif]">
                   <form
-                    action="https://fabform.io/f/xxxxx"
-                    method="post"
+                    action=""
+                    onSubmit={handleSubmit}
                     className="ml-auto space-y-4"
                   >
                     <input
                       type="text"
                       name="name"
+                      value={contactData.name}
+                      onChange={handleChange}
                       placeholder="Name"
                       className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]"
                     />
                     <input
                       type="email"
                       name="email"
+                      value={contactData.email}
+                      onChange={handleChange}
                       placeholder="Email"
                       className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]"
                     />
@@ -60,12 +100,16 @@ function Contact() {
                       type="text"
                       placeholder="Subject"
                       name="subject"
+                      value={contactData.subject}
+                      onChange={handleChange}
                       className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]"
                     />
                     <textarea
                       placeholder="Message"
                       rows="6"
                       name="message"
+                      value={contactData.message}
+                      onChange={handleChange}
                       className="w-full rounded-md px-4 border text-sm pt-2.5 outline-[#007bff]"
                     ></textarea>
                     <button
@@ -116,7 +160,7 @@ function Contact() {
                 <div className=" ms-11 sm:ms-24 mt-9">
                   <h2 className="text-lg font-extrabold">We Are Socials</h2>
                   <div className="flex justify-center text-2xl gap-6 mt-2">
-                    <Link to="mailto:vinay@gmail.com" target="_blank">
+                    <Link to="mailto:demo@gmail.com" target="_blank">
                       <MdEmail className="hover:bg-yellow-600 hover:text-white p-1 rounded" />
                     </Link>
                     <Link to="https://facebook.com" target="_blank">

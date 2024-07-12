@@ -14,9 +14,9 @@ const ChatbotComponent = () => {
   };
 
   return (
-    <div>
+    <div className='z-10' >
       <button
-        className="fixed bottom-20 h-16 flex justify-center items-center w-16 right-4 bg-gray-400 shadow-lg shadow-gray-950 text-white px-4 py-2 rounded-full"
+        className="fixed bottom-20 z-10  h-16 flex justify-center items-center w-16 right-4 bg-gray-400 shadow-lg shadow-gray-950 text-white px-4 py-2 rounded-full"
         onClick={handleOpenChatbot}
       >
         {showChatbot ? (
@@ -26,7 +26,7 @@ const ChatbotComponent = () => {
         )}
       </button>
       {showChatbot && (
-        <div className="fixed bottom-36 right-4">
+        <div className="fixed z-10  bottom-36 right-4">
           <Chatbot
             config={config}
             messageParser={MessageParser}

@@ -7,10 +7,6 @@ import { FaAddressCard } from "react-icons/fa6";
 import { IoCallSharp } from "react-icons/io5";
 import axios from 'axios'
 
-
-
-
-
 const Get = () => {
   const [contactData, setContactData] = useState({
     name: "",

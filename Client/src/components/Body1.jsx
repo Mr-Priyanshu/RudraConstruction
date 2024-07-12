@@ -56,7 +56,7 @@ const Body1 = () => {
       <img
         src={backimg}
         alt="Background"
-        className="object-cover max-w-fit sm:w-auto h-svh"
+        className="object-cover h-dvh  xl:w-[125rem]   "
       />
       <div className="absolute inset-0 flex flex-col justify-center items-start p-4 sm:ms-16 md:pl-40 md:pt-24 overflow-hidden">
         <h1 className=" md:text-[100px] leading-tight md:leading-[140px]  w-1394 h-172 left-266 top-373 font-goldman font-bold text-7xl  tracking-wider text-orange-300"

@@ -45,6 +45,8 @@ import ScrollToTop from "./components/scrollTop";
 import ChatbotComponent from "./chatBot/chatBotComponents";
 import MobileNavBar from "./components/MobileNavbar";
 import AdminHome from "./pages/AdminPage/AadminHome";
+import ShowContactRequest from "./pages/AdminPage/ContactRequest";
+import Dashboard from "./pages/AdminPage/Dashboard";
 
 function App() {
   
@@ -105,6 +107,8 @@ function App() {
 
             {/* Admin Page Routes */}
             <Route path="/Admin-Home-Page" element={<AdminHome/>}/>
+            
+            <Route path="/Admin-contact-request-page" element={<ShowContactRequest/>}/>
 
           
         </Routes>
