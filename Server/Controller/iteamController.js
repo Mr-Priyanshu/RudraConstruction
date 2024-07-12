@@ -2,7 +2,6 @@ db = require('../config/db')
 
 const contactInfo = (req, res) => {
   
-
   const {name, email, subject, message} = req.body;
   console.log(name, email, subject, message);
   const query = `INSERT INTO lead_info (name, email, subject, message) VALUES(?, ?, ?, ?)`;
@@ -21,6 +20,11 @@ const contactInfo = (req, res) => {
     res.send('Request Send ')
   });
 };
+
+
+
+
+
 
 module.exports = {
   contactInfo,
