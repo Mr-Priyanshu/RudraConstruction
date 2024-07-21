@@ -1,4 +1,6 @@
 import "./App.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import FooterComponent from "./components/Footer";
@@ -46,84 +48,85 @@ import ChatbotComponent from "./chatBot/chatBotComponents";
 import MobileNavBar from "./components/MobileNavbar";
 import AdminHome from "./pages/AdminPage/AadminHome";
 import ShowContactRequest from "./pages/AdminPage/ContactRequest";
-import Dashboard from "./pages/AdminPage/Dashboard";
+import AddOngoingProjects from "./pages/AdminPage/addProjectsandView";
+
 
 function App() {
-  
+
   return (
     <>
-    <ScrollToTop>
+      <ScrollToTop>
 
-    
-    <div className=" z-50 w-full fixed">
-        <Navbar />
-      </div>
-      <div className="z-10 w-full fixed ">
 
-      <Sidebar />
-      </div>
+        <div className=" z-50 w-full fixed">
+          <Navbar />
+        </div>
+        <div className="z-10 w-full fixed ">
+
+          <Sidebar />
+        </div>
         <Routes>
-            <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
 
-            {/* <Route path="/Navbar" element={<Navbar />} />
+          {/* <Route path="/Navbar" element={<Navbar />} />
             <Route path="/Sidebar" element={<Sidebar />} /> */}
-            <Route path="/Body1" element={<Body1 />} />
-            <Route path="/ImageStack" element={<ImageStack />} />
-            <Route path="/Card" element={<Card />} />
-            <Route path="/OngoingProject" element={<OngoingProject />} />
-            <Route path="/Showcasecards" element={<Showcasecards />} />
-            <Route path="/Numbers" element={<Numbers />} />
-            <Route path="/OurTeam" element={<OurTeam />} />
-            
-            <Route path="/Contact" element={<Contact />} />
-            <Route path="/Testimonials" element={<Testimonials />} />
-            <Route path="/MoreAbout" element={<MoreAbout />} />
-            <Route path="/Services" element={<Services />} />
-            <Route path="/Creation" element={<Creation />} />
-            <Route path="/Creations" element={<Creations />} />
-            <Route path="/ConHero" element={<ConHero />} />
-            <Route path="/Get" element={<Get />} />
-            <Route path="/Map" element={<Map />} />
-            <Route path="/ServicePage" element={<ServicePage />} />
-            <Route path="/ServHero" element={<ServHero />} />
-            <Route path="/Best" element={<Best />} />
-            <Route path="/ServCards" element={<ServCards />} />
-            <Route path="/ServContact" element={<ServContact />} />
-            <Route path="/Interior" element={<Interior />} />
-            <Route path="/IntHero" element={<IntHero />} />
-            <Route path="/workquality" element={<WorkQuality />} />
-            <Route path="/liveProject" element={<LiveOngoingProjects />} />
-            <Route path="/singleproject/" element={<SingleProject />} />
-            <Route path="/TextAnimation" element={<TextAnimation />} />
+          <Route path="/Body1" element={<Body1 />} />
+          <Route path="/ImageStack" element={<ImageStack />} />
+          <Route path="/Card" element={<Card />} />
+          <Route path="/OngoingProject" element={<OngoingProject />} />
+          <Route path="/Showcasecards" element={<Showcasecards />} />
+          <Route path="/Numbers" element={<Numbers />} />
+          <Route path="/OurTeam" element={<OurTeam />} />
 
-            {/* Pages Route  */}
-            <Route path="/AboutUs" element={<AboutUs />} />
-            <Route path="/SingleServices" element={<SingleServices />} />
-            <Route path="/ContactUs" element={<ContactUs />} />
-            <Route path="/Terms" element={<Terms />} />
-            <Route path="/Privacy" element={<Privacy />} />
-            <Route path="/SalarySlip" element={<SalarySlip />} />
-            <Route path="/Machine-Information" element={<MachineInfo/>} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Testimonials" element={<Testimonials />} />
+          <Route path="/MoreAbout" element={<MoreAbout />} />
+          <Route path="/Services" element={<Services />} />
+          <Route path="/Creation" element={<Creation />} />
+          <Route path="/Creations" element={<Creations />} />
+          <Route path="/ConHero" element={<ConHero />} />
+          <Route path="/Get" element={<Get />} />
+          <Route path="/Map" element={<Map />} />
+          <Route path="/ServicePage" element={<ServicePage />} />
+          <Route path="/ServHero" element={<ServHero />} />
+          <Route path="/Best" element={<Best />} />
+          <Route path="/ServCards" element={<ServCards />} />
+          <Route path="/ServContact" element={<ServContact />} />
+          <Route path="/Interior" element={<Interior />} />
+          <Route path="/IntHero" element={<IntHero />} />
+          <Route path="/workquality" element={<WorkQuality />} />
+          <Route path="/liveProject" element={<LiveOngoingProjects />} />
+          <Route path="/singleproject/" element={<SingleProject />} />
+          <Route path="/TextAnimation" element={<TextAnimation />} />
 
-            {/* Admin Page Routes */}
-            <Route path="/Admin-Home-Page" element={<AdminHome/>}/>
-            
-            <Route path="/Admin-contact-request-page" element={<ShowContactRequest/>}/>
+          {/* Pages Route  */}
+          <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/SingleServices" element={<SingleServices />} />
+          <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/Terms" element={<Terms />} />
+          <Route path="/Privacy" element={<Privacy />} />
+          <Route path="/SalarySlip" element={<SalarySlip />} />
+          <Route path="/Machine-Information" element={<MachineInfo />} />
 
-          
+          {/* Admin Page Routes */}
+          <Route path="/Admin-Home-Page" element={<AdminHome />} />
+          <Route path="/Admin-contact-request-page" element={<ShowContactRequest />} />
+          <Route path="/Admin-add-ongoing-projects" element={<AddOngoingProjects />} />
+
+
         </Routes>
 
         {/* // Chat Bot  Part  */}
-              <ChatbotComponent/>
+        <ChatbotComponent />
 
-      {/* this part is use ti footer */}
-      <div className="sm:hidden">
+        {/* this part is use ti footer */}
+        <div className="sm:hidden">
 
-      <MobileNavBar/>
-      </div>
+          <MobileNavBar />
+        </div>
 
-      <FooterComponent/>
-    </ScrollToTop>
+        <FooterComponent />
+      </ScrollToTop>
     </>
   );
 }

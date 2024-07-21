@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import backimg from "/images/herosection.png";
+// import backimg from "../Assets/herosection.mp4";
 import styled, { keyframes } from 'styled-components';
 
 // Keyframes for animations
@@ -58,8 +59,9 @@ const Body1 = () => {
         alt="Background"
         className="object-cover h-dvh  xl:w-[125rem]   "
       />
+      {/* <video src={backimg} muted autoPlay loop className="object-cover h-dvh  xl:w-[125rem] blur-sm fill-transparent "></video> */}
       <div className="absolute inset-0 flex flex-col justify-center items-start p-4 sm:ms-16 md:pl-40 md:pt-24 overflow-hidden">
-        <h1 className=" md:text-[100px] leading-tight md:leading-[140px]  w-1394 h-172 left-266 top-373 font-goldman font-bold text-7xl  tracking-wider text-orange-300"
+        <h1 className=" md:text-[100px] leading-tight md:leading-[140px]  w-1394 h-172 left-266 top-373 font-goldman font-bold text-7xl  tracking-wider text-orange-300 "
           style={{ textShadow: 'rgb(0, 2, 0) 1px 5px 5px' }}>
           LET YOUR HOME BE
         </h1>

@@ -1,10 +1,10 @@
-import  { useState } from 'react';
-import { RiRobot3Fill } from 'react-icons/ri';
-import Chatbot from 'react-chatbot-kit';
-import 'react-chatbot-kit/build/main.css';
-import config from './config';
-import MessageParser from './MessageParser';
-import ActionProvider from './ActionProvider';
+import { useState } from "react";
+import { RiRobot3Fill } from "react-icons/ri";
+import Chatbot from "react-chatbot-kit";
+import "react-chatbot-kit/build/main.css";
+import config from "./config";
+import MessageParser from "./MessageParser";
+import ActionProvider from "./ActionProvider";
 
 const ChatbotComponent = () => {
   const [showChatbot, setShowChatbot] = useState(false);
@@ -14,7 +14,7 @@ const ChatbotComponent = () => {
   };
 
   return (
-    <div className='z-10' >
+    <div className="z-10">
       <button
         className="fixed bottom-20 z-10  h-16 flex justify-center items-center w-16 right-4 bg-gray-400 shadow-lg shadow-gray-950 text-white px-4 py-2 rounded-full"
         onClick={handleOpenChatbot}

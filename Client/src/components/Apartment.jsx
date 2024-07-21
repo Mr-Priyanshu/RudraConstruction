@@ -8,18 +8,22 @@ function Apartment() {
   return (
     <div>
       <div className=" w-full h-auto flex flex-col justify-center items-center">
-        <h1 className="mt-5 mb-5 md:mt-10 md:mb-10 md:text-center md:text-2xl font-bold">
-          CHOOSE AN <span className="text-[#FFBA66]">APARTMENT</span>
+        <h1 className="mt-5 mb-5 md:mt-10 md:mb-10 md:text-center md:text-2xl font-semibold">
+          CHOOSE AN APARTMENT <span className="text-[#FFBA66]"></span>
         </h1>
         <div className="md:w-[1050px] md:h-[600px] md:grid grid-cols-3 ">
           <div className="flex flex-col items-center w-[350px] md:pl-12 col-span-1">
-            <div>
-              <img className="w-[300px] h-[300px]" src={Image1} alt="Image1" />
+            <div className="w-[300px] h-[300px] overflow-hidden">
+              <img
+                className="w-[300px] h-[300px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-30 "
+                src={Image1}
+                alt="Image1"
+              />
             </div>
             <div className="bg-white w-[300px] h-[250px] rounded-[10px] border border-[gray] mt-6">
               <div className="flex flex-col items-center">
                 <img
-                  className="w-[60px] h-auto pt-5"
+                  className="w-[60px] h-auto pt-5 "
                   src={Image4}
                   alt="Image4"
                 />
@@ -49,14 +53,22 @@ function Apartment() {
                 </p>
               </div>
             </div>
-            <div>
-              <img className="w-[300px] h-[300px]" src={Image2} alt="Image2" />
+            <div className="w-[300px] h-[300px] overflow-hidden">
+              <img
+                className="w-[300px] h-[300px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-30"
+                src={Image2}
+                alt="Image2"
+              />
             </div>
           </div>
 
           <div className="flex flex-col w-[350px] items-center md:items-left col-span-1 pt-6 md:pt-0">
-            <div>
-              <img className="w-[300px] h-[300px]" src={Image3} alt="Image3" />
+            <div className="w-[300px] h-[300px] overflow-hidden">
+              <img
+                className="w-[300px] h-[300px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-30"
+                src={Image3}
+                alt="Image3"
+              />
             </div>
             <div className=" bg-white w-[300px] h-[250px] rounded-[10px] border border-[gray] mt-6">
               <div className="flex flex-col items-center">

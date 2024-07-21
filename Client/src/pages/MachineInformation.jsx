@@ -1,6 +1,4 @@
-
 import MachineCard from '../components/MachineCard';
-
 
 const machines = [
   {
@@ -38,7 +36,7 @@ const machines = [
 function MachineInfo() {
   return (
     <div className="container pt-28 mx-auto p-4">
-      <h1 className="text-6xl font-bold text-center my-8 text-orange-400">Construction <span className='text-gray-400'>Machines</span></h1>
+      <h1 className="text-6xl font-semibold text-center my-8 text-[#222322]">Construction Machines<span className='text-gray-400'></span></h1>
       <p className='sm:mx-20 sm:ps-10 py-5'>This construction machinery and equipment page provides a detailed overview of all the various types of construction machinery and equipment used in construction activities. It offers users valuable information about these tools and machines.</p>
       <div className="flex flex-wrap justify-center">
         {machines.map((machine, index) => (

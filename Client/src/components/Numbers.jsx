@@ -9,29 +9,29 @@ function Numbers() {
             <div className="flex py-4">
               <div className="text-4xl pr-2">160</div>
               <div>
-                <div className="text-[#FFD49F] text-sm ">SQUARE</div>
-                <div className="text-[#A2A2A2] text-sm ">COMPLEX</div>
+                <div className="text-[#fddaa6] text-sm ">SQUARE</div>
+                <div className="text-[#010100] text-sm ">COMPLEX</div>
               </div>
             </div>
             <div className="flex py-4 ">
               <div className="text-4xl pr-2">180</div>
               <div>
-                <div className="text-[#FFD49F] text-sm">HAPPY</div>
-                <div className="text-[#A2A2A2] text-sm">CLIENTS</div>
+                <div className="text-[#fddaa6] text-sm">HAPPY</div>
+                <div className="text-[#010100] text-sm">CLIENTS</div>
               </div>
             </div>
             <div className="flex py-4">
               <div className="text-4xl pr-2">100</div>
               <div>
-                <div className="text-[#FFD49F] text-sm">COMPLETED</div>
-                <div className="text-[#A2A2A2] text-sm">PROJECTS</div>
+                <div className="text-[#fddaa6] text-sm">COMPLETED</div>
+                <div className="text-[#010100] text-sm">PROJECTS</div>
               </div>
             </div>
             <div className="flex py-4">
               <div className="text-4xl pr-2">198</div>
               <div>
-                <div className="text-[#FFD49F] text-sm">TEAM</div>
-                <div className="text-[#A2A2A2] text-sm">MEMEBERS</div>
+                <div className="text-[#fddaa6] text-sm">TEAM</div>
+                <div className="text-[#222322] text-sm">MEMEBERS</div>
               </div>
             </div>
           </div>

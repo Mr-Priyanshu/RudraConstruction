@@ -1,12 +1,22 @@
 
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
+
 
 function Services() {
+  
+  const [nav1, setNav1] = useState(null);
+  const [slider1, setSlider1] = useState(null);
+  useEffect(() => {
+    setNav1(slider1);
+  },[slider1]);
+
   return (
     <>
       <center className="mt-20">
         <h1
-          className="text-3xl text-[#FFBA66] font-bold "
+          className="text-4xl text-[#222322] font-semibold "
         >
           SERVICES
         </h1>
@@ -25,31 +35,69 @@ function Services() {
             alt
           />
         </div>
+        <div className="col-lg-4 col-md-7 col-sm-9">
+
+        
         <div className="relative md:left-20 md:px-25 mb-20 px-8  ">
           <div className="md:w-[600px]  w-full h-[300px] object-center object-cover relative rounded-tr-[40px] rounded-bl-[40px] bg-white md:px-20  px-10 pt-7  shadow-lg">
-            <h1 className="md:text-2xl font-serif text-gray-600 font-semibold">
-              DESIGN-BUILD
-            </h1>
-            <h3 className="md:text-xl font-serif text-gray-600 mt-2">
-              BENCHMARK DESIGN STUDIO
-            </h3>
-            <p className="lg:text-lg text-xs">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
-              laboriosam, cum cumque repudiandae doloribus blanditiis nam
-              veritatis atque qui delectus debitis possimus soluta laborum nemo
-            </p>
+          <Slider
+          asNavFor={nav1}
+          ref={(slider) => setSlider1(slider)}
+          infinite={true}
+          dots={true}
+          arrows={false}
+          speed={500}
+          slidesToShow={1}
+          slidesToScroll={1}
+          autoplay={true}
+          autoplaySpeed={5000}
+          className="content-wrapper"
+        >
+            <div className="service-card single-item-wrap ">
+              <h1 className="md:text-2xl font-serif text-[#515150] font-semibold">
+                DSIGN-BUILD
+              </h1>
+              <h3 className="md:text-xl font-serif text-[#515150] mt-2">
+                BENCHMARK DESIGN STUDIO
+              </h3>
+              <p className="lg:text-lg text-xs">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
+                laboriosam, cum cumque repudiandae doloribus blanditiis nam
+                veritatis atque qui delectus debitis possimus soluta laborum nemo
+              </p>
+            </div>
+
+            <div className="service-card single-item-wrap ">
+              <h1 className="md:text-2xl font-serif text-gray-600 font-semibold">
+                ARCHTECT-BUILD
+              </h1>
+              <h3 className="md:text-xl font-serif text-gray-600 mt-2">
+                BENCHMARK DESIGN STUDIO
+              </h3>
+              <p className="lg:text-lg text-xs">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
+                laboriosam, cum cumque repudiandae doloribus blanditiis nam
+                veritatis atque qui delectus debitis possimus soluta laborum nemo
+              </p>
+            </div>
+
+
+            </Slider>
+
             <Link to="/ServicePage">
-            
-            <button
-              className="large none center rounded-lg bg-orange-500 py-3 px-6 font-sans text-2xl font-bold uppercase text-white shadow-md shadow-orange-500/20 transition-all hover:shadow-lg hover:shadow-orange-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none mt-5 "
-              data-ripple-light="true"
-            >
-              Services
-            </button>
+
+              <button
+                className="large none center rounded-lg bg-orange-500 py-3 px-6 font-sans text-2xl font-bold uppercase text-white shadow-md shadow-orange-500/20 transition-all hover:shadow-lg hover:shadow-orange-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none mt-5 "
+                data-ripple-light="true"
+              >
+                Services
+              </button>
             </Link>
           </div>
         </div>
+      
       </div>
+    </div >
       <div></div>
     </>
   );

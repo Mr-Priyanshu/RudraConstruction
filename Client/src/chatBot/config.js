@@ -1,15 +1,14 @@
-import { createChatBotMessage } from 'react-chatbot-kit';
-import ActionProvider from './ActionProvider';
-import MessageParser from './MessageParser';
-import Options from './Options' 
-
+import { createChatBotMessage } from "react-chatbot-kit";
+import ActionProvider from "./ActionProvider";
+import MessageParser from "./MessageParser";
+import Options from "./Options";
 
 const config = {
   botName: "Construction Bot",
   initialMessages: [
     createChatBotMessage("Hello! How can I assist you with construction?"),
   ],
-  customComponents: {},  // Placeholder for custom components
+  customComponents: {},
   customStyles: {
     botMessageBox: {
       backgroundColor: "#376B7E",
@@ -21,7 +20,7 @@ const config = {
   widgets: [
     {
       widgetName: "options",
-      // widgetFunc: (props) => <Options {...props} />
+      // widgetFunc: (props) => <Options {...props} />,
     },
   ],
   actionProvider: ActionProvider,

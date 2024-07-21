@@ -1,4 +1,3 @@
-// MessageParser.js
 class MessageParser {
   constructor(actionProvider) {
     this.actionProvider = actionProvider;

@@ -15,7 +15,7 @@ const ImageStack = () => {
               alt="Background"
             />
           </div>
-          <div className="absolute top-10 left-10 md:top-24 md:left-24">
+          <div className="absolute top-10 left-10 md:top-12 md:left-12">
             <img
               className="w-[250px] md:w-[400px] h-auto"
               src={frontImage}

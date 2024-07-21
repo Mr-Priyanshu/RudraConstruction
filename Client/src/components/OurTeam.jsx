@@ -6,7 +6,7 @@ function OurTeam() {
     <div>
       <div className=" w-full h-auto flex flex-col justify-center items-center">
         <div className="md:w-[1050px] h-auto">
-          <h2 className="text-center text-3xl font-bold mb-8 text-[#FFBA66]">
+          <h2 className="text-center text-4xl font-semibold mb-8 text-[#222322]">
             Our Team
           </h2>
 

@@ -35,7 +35,7 @@ function Contact() {
     }
     setContactData(
       {
-        name: "",
+    name: "",
     email: "",
     subject: "",
     message: "",

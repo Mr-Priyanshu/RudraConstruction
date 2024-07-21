@@ -31,7 +31,7 @@ const Dashboard = () =>{
 
       <Link to="">
       <div className="p-4 bg-white rounded-lg shadow-md">
-        <p className="text-2xl font-bold">7</p>
+        <p className="text-2xl font-bold">0</p>
         <p className="text-gray-600">Ongoining Projects</p>
       </div>
       </Link>
@@ -46,7 +46,7 @@ const Dashboard = () =>{
       </div>
       </Link>
       <div className="p-4 bg-white rounded-lg shadow-md">
-        <p className="text-2xl font-bold">2</p>
+        <p className="text-2xl font-bold">0</p>
         <p className="text-gray-600">Site Visit Request</p>
       </div>
     </div>
