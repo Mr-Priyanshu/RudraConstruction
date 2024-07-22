@@ -5,7 +5,7 @@ function MoreAbout() {
   return (
     <>
       <center className="mb-24 mt-11">
-        <h1 className=" text-orange-300 text-6xl p-6 font-semibold">
+        <h1 className=" text-[#fddaa6] text-6xl p-6 font-semibold">
           Welcome
         </h1>
         <p className="  text-2xl mb-5">Crafting homes for</p>
@@ -21,7 +21,7 @@ function MoreAbout() {
         
         <button
         
-          className="large none center rounded-lg bg-orange-500 py-3 px-6 font-sans text-2xl font-bold uppercase text-white shadow-md shadow-orange-500/20 transition-all hover:shadow-lg hover:shadow-orange-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none mt-5"
+          className="large none center  bg-[#515150] py-3 px-6  text-2xl  uppercase text-white shadow-md shadow-gray-500/20 transition-all hover:shadow-lg hover:shadow-gray-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none mt-5"
           data-ripple-light="true"
         >
           More about us

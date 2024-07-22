@@ -50,7 +50,7 @@ const Sidebar = ({ sidebar, handleSidebar }) => {
             <span className="flex-1 text-center text-3xl sm:text-5xl sm:mx-10 hover:mx-1">About</span>
           </Link>
           <Link
-            to="/SingleServices"
+            to="/ServicePage"
             className="flex justify-between items-center text-lg md:text-xl no-underline px-2 py-1 md:px-12 md:py-4 md:m-4 hover:text-gray-600"
             onClick={handleSidebar}
           >
@@ -70,13 +70,7 @@ const Sidebar = ({ sidebar, handleSidebar }) => {
           >
             <span className="flex-1 text-center text-3xl sm:text-5xl sm:mx-10 hover:mx-1">Contact</span>
           </Link>
-          <Link
-            to="#blogs"
-            className="flex justify-between items-center text-lg md:text-xl no-underline px-2 py-1 md:px-12 md:py-4 md:m-4 hover:text-gray-600"
-            onClick={handleSidebar}
-          >
-            <span className="flex-1 text-center text-3xl sm:text-5xl sm:mx-10 hover:mx-1">----</span>
-          </Link>
+         
         </nav>
       </div>
     </div>

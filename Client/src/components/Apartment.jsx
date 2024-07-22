@@ -1,4 +1,4 @@
-import React from "react";
+
 import Image1 from "/images/ARCHITECTURE.png";
 import Image2 from "/images/Exterior.png";
 import Image3 from "/images/InteriorImg.png";
@@ -9,7 +9,7 @@ function Apartment() {
     <div>
       <div className=" w-full h-auto flex flex-col justify-center items-center">
         <h1 className="mt-5 mb-5 md:mt-10 md:mb-10 md:text-center md:text-2xl font-semibold">
-          CHOOSE AN APARTMENT <span className="text-[#FFBA66]"></span>
+          CHOOSE AN DESIGN <span className="text-[#FFBA66]"></span>
         </h1>
         <div className="md:w-[1050px] md:h-[600px] md:grid grid-cols-3 ">
           <div className="flex flex-col items-center w-[350px] md:pl-12 col-span-1">
@@ -30,8 +30,8 @@ function Apartment() {
                 <h1 className="pt-2 text-sm">ARCHITECTURE</h1>
                 <p className="text-[8px] text-[gray] py-3">SOME MORE DETAILS</p>
                 <p className="text-[gray] text-[10px] text-center px-10">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industrys
                 </p>
               </div>
             </div>
@@ -48,8 +48,8 @@ function Apartment() {
                 <h1 className="pt-2 text-sm">EXTERIOR DESIGN</h1>
                 <p className="text-[8px] text-[gray] py-3">SOME MORE DETAILS</p>
                 <p className="text-[gray] text-[10px] text-center px-10">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry
                 </p>
               </div>
             </div>
@@ -80,8 +80,8 @@ function Apartment() {
                 <h1 className="pt-2 text-sm">INTERIOR</h1>
                 <p className="text-[8px] text-[gray] py-3">SOME MORE DETAILS</p>
                 <p className="text-[gray] text-[10px] text-center px-10">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry
                 </p>
               </div>
             </div>

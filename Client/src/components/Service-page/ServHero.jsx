@@ -3,7 +3,7 @@ import React from "react";
 function ServHero() {
   return (
     <>
-      <div className="relative w-full h-80">
+      <div className="relative w-full h-80 ">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div
           className="w-full h-80"

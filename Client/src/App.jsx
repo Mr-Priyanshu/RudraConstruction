@@ -87,7 +87,6 @@ function App() {
           <Route path="/ConHero" element={<ConHero />} />
           <Route path="/Get" element={<Get />} />
           <Route path="/Map" element={<Map />} />
-          <Route path="/ServicePage" element={<ServicePage />} />
           <Route path="/ServHero" element={<ServHero />} />
           <Route path="/Best" element={<Best />} />
           <Route path="/ServCards" element={<ServCards />} />
@@ -102,6 +101,7 @@ function App() {
           {/* Pages Route  */}
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/SingleServices" element={<SingleServices />} />
+          <Route path="/ServicePage" element={<ServicePage />} />
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/Terms" element={<Terms />} />
           <Route path="/Privacy" element={<Privacy />} />

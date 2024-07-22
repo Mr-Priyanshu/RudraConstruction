@@ -1,12 +1,15 @@
 import { createChatBotMessage } from "react-chatbot-kit";
-import ActionProvider from "./ActionProvider";
-import MessageParser from "./MessageParser";
+
 import Options from "./Options";
 
 const config = {
-  botName: "Construction Bot",
+  botName: "RudraBot",
   initialMessages: [
-    createChatBotMessage("Hello! How can I assist you with construction?"),
+    createChatBotMessage("Hello! How can I assist you with construction?",
+      {
+        widget: "options",
+      }
+    ),
   ],
   customComponents: {},
   customStyles: {
@@ -20,11 +23,11 @@ const config = {
   widgets: [
     {
       widgetName: "options",
-      // widgetFunc: (props) => <Options {...props} />,
+      widgetFunc: (props) => <Options {...props} />,
     },
   ],
-  actionProvider: ActionProvider,
-  messageParser: MessageParser,
+  
+  
 };
 
 export default config;

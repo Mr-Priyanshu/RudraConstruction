@@ -1,4 +1,4 @@
-import React from "react";
+
 import ServHero from "../components/Service-page/ServHero";
 import Best from "../components/Service-page/Best";
 import ServCards from "../components/Service-page/ServCards";
@@ -7,13 +7,17 @@ import Footer from "../components/Footer";
 
 const ServicePage = () => {
   return (
+
     <>
+    <div className="pt-11">
+
       <ServHero />
       <Best />
       <ServCards />
       <ServContact />
+    </div>
 
-      <Footer />
+     
     </>
   );
 };

@@ -1,4 +1,4 @@
-import React from "react";
+
 
 function Best() {
   return (
@@ -14,12 +14,12 @@ function Best() {
         <div className="flex flex-col md:flex-row items-start justify-start min-h-96 md:p-6 p-1  ">
           <div className="bg-transparent">
             <div className="relative top-0 left-0 z-10 md:w-96 w-60 h-40  rounded-lg bg-transparent">
-              <div class="rounded-xl ">
+              <div className="rounded-xl ">
                 <img src="/images/Best1.png" alt="" className="" />
               </div>
             </div>
             <div className="relative top-4 left-32 z-20  md:w-96  w-60 h-40 md:h-96 rounded-lg bg-transparent ">
-              <div class="rounded-xl ">
+              <div className="rounded-xl ">
                 <img src="/images/Best2.png" alt="" className="" />
               </div>
             </div>
@@ -28,7 +28,7 @@ function Best() {
         <div className="w-full md:w-96 p-4  rounded-lg mt-5 ">
           <p className="text-xl text-orange-400">BEST ARCHITECTURE</p>
 
-          <h1 className="md:text-4xl text-2xl font-semibold font-serif">
+          <h1 className="md:text-4xl text-2xl font-semibold ">
             ARCHITECTURE DID EXPECT STRATEGIST
           </h1>
 

@@ -9,6 +9,7 @@ import axios from "axios";
 const Dashboard = () =>{
 
   const [totalCount, setTotalCount] = useState([]);
+  const [totalprojectCount, setTotalprojectCount] = useState([]);
 
 
   useEffect(()=>{
@@ -18,6 +19,14 @@ const Dashboard = () =>{
     })
     .catch(err =>{
       console.log("here is error", err)
+    })
+    axios.get('http://localhost:8080/api/rudra-construction/ongoning-projects')
+    .then(Response =>{
+      setTotalprojectCount(Response.data)
+      console.log();
+    })
+    .catch(err =>{
+      console.log(" 28 here is error", err)
     })
   },[]);
 
@@ -31,7 +40,7 @@ const Dashboard = () =>{
 
       <Link to="">
       <div className="p-4 bg-white rounded-lg shadow-md">
-        <p className="text-2xl font-bold">0</p>
+        <p className="text-2xl font-bold">{totalprojectCount.length}</p>
         <p className="text-gray-600">Ongoining Projects</p>
       </div>
       </Link>

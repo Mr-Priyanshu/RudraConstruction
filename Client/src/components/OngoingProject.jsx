@@ -61,7 +61,7 @@ const OngoingProject = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center w-full min-h-screen  p-42 mt-11">
+    <div className="flex flex-col items-center justify-center w-full my-24  p-42 mt-11">
       <div className="mb-4 mr-9 flex text-left ">
         <h1 className=" sm:text-6xl text-[#222322] text-3xl font-semibold  p-3 text-left">
           Ongoing Projects

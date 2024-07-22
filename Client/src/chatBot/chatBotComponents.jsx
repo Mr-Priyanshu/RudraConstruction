@@ -30,7 +30,7 @@ const ChatbotComponent = () => {
           <Chatbot
             config={config}
             messageParser={MessageParser}
-            actionProvider={ActionProvider}
+            actionProvider={ActionProvider }
           />
         </div>
       )}

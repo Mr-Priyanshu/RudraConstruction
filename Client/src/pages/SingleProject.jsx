@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useParams } from 'react-router-dom';
 import image1 from '../Assets/bridge.jpg';
 import image2 from '../Assets/bridge2.jpg';
